@@ -1,0 +1,22 @@
+{
+  "name": "wmf-cra-react-app-rewired",
+  "private": true,
+  "version": "1.0.0",
+  "description": "test wmf",
+  "workspaces": {
+    "packages": [
+      "./host",
+      "./remote"
+    ]
+  },
+  "scripts": {
+    "start": "concurrently \"cd ./host && npm start\" \"cd ./remote && npm start\"",
+    "build": "concurrently \"cd ./host && npm build\" \"cd ./remote && npm build\"",
+    "test": "concurrently \"cd ./host && npm serve\" \"cd ./remote && npm serve\""
+  },
+  "author": "I. Muratov",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
