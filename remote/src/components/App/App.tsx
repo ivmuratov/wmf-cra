@@ -4,7 +4,7 @@ import cls from './App.module.scss';
 
 const App: FC = () => (
   <main className={cls.App}>
-    REMOTE
+    REMOTE TEST
     <Button />
   </main>
 );
